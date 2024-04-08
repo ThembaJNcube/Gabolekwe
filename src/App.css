@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+:root {
+  --bg-color: #5e3106;
+  --second-bg-color: #112750;
+  --text-color: #fff;
+  --main-color: rgb(27, 197, 11);
+  --btn-color: yellow;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #481e14;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  @apply flex items-center justify-between w-full fixed px-4 top-0 z-[100] h-auto  bg-black 
+  max-md:py-0 max-md:px-5 max-md:flex max-md:justify-between max-md:h-auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-logo {
+  @apply w-[7rem] /*max-md:absolute max-md:top-0 max-md:w-32 max-md:h-8*/;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  @apply max-md:absolute max-md:top-[100%] max-md:left-0 max-md:w-[100%]
+  max-md:p-[1rem] max-md:bg-black;
 }
 
-@keyframes App-logo-spin {
+.menu {
+  @apply text-white hidden max-md:block /*max-md:absolute max-md:top-6 max-md:right-6*/;
+}
+
+.nav-link {
+  @apply text-2xl font-semibold text-[#c42c2c] ml-[2.5rem] p-1
+  rounded-[0.3rem] bg-transparent hover:bg-[#0ee431] hover:bg-opacity-30 transition-all duration-300 
+  max-lg:text-base max-lg:mx-1 max-lg:px-1 max-md:block;
+}
+.nav-btn {
+  @apply text-2xl text-center font-normal text-[#bababd] bg-[#750e0e] my-2 py-[0.3rem] px-[0.3rem]
+   rounded-[0.7rem] w-[8rem] h-[2.7rem] bg-opacity-80  animate-pulse hover:animate-none
+   max-lg:w-[7.3rem] max-lg:text-lg max-lg:text-center max-lg:h-[2.5rem]
+   max-sm:h-[40%];
+}
+
+.footer {
+  @apply text-[#000] max-2xl:fixed max-2xl:bottom-0 bg-[#F2613F]  flex justify-between w-full h-8 py-0  px-[2.3rem] max-md:px-2;
+}
+.footer-links {
+  @apply flex justify-between gap-3 pt-2 text-[#000] text-[5rem] max-md:gap-1;
+}
+
+.section-container {
+  @apply text-[#fcc141] w-full m-auto pt-16 px-32 grid pb-12 grid-cols-3 gap-2 
+  max-lg:grid-cols-2 max-lg:px-12
+  max-md:grid-cols-1  max-md:pt-[6rem] max-md:pb-[2.2rem] max-md:h-auto max-md:gap-[2px];
+}
+
+.contact-box {
+  @apply p-[.8rem] border-[3px] text-center rounded-[.2rem] hover:border-[#40a145] hover:border-[5px];
+}
+
+.contact-box svg {
+  @apply text-[#0e0d0d] hover:animate-pulse font-extrabold;
+}
+
+.contact-box .socials {
+  @apply flex justify-center gap-2 max-md:gap-4;
+}
+
+/*@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/

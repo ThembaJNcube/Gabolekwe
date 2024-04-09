@@ -1,18 +1,12 @@
-:root {
-  --bg-color: #5e3106;
-  --second-bg-color: #112750;
-  --text-color: #fff;
-  --main-color: rgb(27, 197, 11);
-  --btn-color: yellow;
-}
-
-body {
-  background: #481e14;
+body,
+html {
+  background: #000000;
+  height: 100%;
 }
 
 .header {
   @apply flex items-center justify-between w-full fixed px-4 top-0 z-[100] h-auto  bg-black 
-  max-md:py-0 max-md:px-5 max-md:flex max-md:justify-between max-md:h-auto;
+  max-md:py-0 max-md:px-5 max-md:flex max-md:justify-between max-md:h-auto opacity-70;
 }
 
 .nav-logo {
@@ -41,18 +35,21 @@ body {
 }
 
 .footer {
-  @apply text-[#000] max-2xl:fixed max-2xl:bottom-0 bg-[#F2613F]  flex justify-between w-full h-8 py-0  px-[2.3rem] max-md:px-2;
+  @apply text-[#000] max-2xl:fixed max-2xl:bottom-0 bg-[#7a4d1a]  flex justify-between w-full h-8 py-0 opacity-75 px-[2.3rem] max-md:px-2;
 }
 .footer-links {
   @apply flex justify-between gap-3 pt-2 text-[#000] text-[5rem] max-md:gap-1;
 }
 
 .section-container {
-  @apply text-[#fcc141] w-full m-auto pt-16 px-32 grid pb-12 grid-cols-3 gap-2 
-  max-lg:grid-cols-2 max-lg:px-12
-  max-md:grid-cols-1  max-md:pt-[6rem] max-md:pb-[2.2rem] max-md:h-auto max-md:gap-[2px];
+  @apply text-[#fcc141] w-full m-auto pt-16 px-32  max-lg:px-12
+  max-md:pt-[6rem] max-md:pb-[2.2rem] max-md:h-auto;
 }
 
+.contactSect {
+  @apply grid pb-12 grid-cols-3 gap-2  max-md:grid-cols-1 
+  max-lg:grid-cols-2 max-md:gap-[2px];
+}
 .contact-box {
   @apply p-[.8rem] border-[3px] text-center rounded-[.2rem] hover:border-[#40a145] hover:border-[5px];
 }
@@ -64,6 +61,35 @@ body {
 .contact-box .socials {
   @apply flex justify-center gap-2 max-md:gap-4;
 }
+
+.homeSect {
+  background-image: url("./images/H1.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeSect {
+  @apply m-auto;
+}
+
+.container{
+  @apply w-full h-[100vh] flex items-center justify-center text-white
+}
+.content{
+  @apply border-b-[.2rem] border-l-[.5rem] p-5 font-bold bg-black opacity-80
+}
+
+.content h1{
+  @apply text-[4rem] max-md:text-[2rem]
+}
+
+.content p{
+  @apply text-[2rem] max-md:text-[1.2rem]
+}
+
+
 
 /*@keyframes App-logo-spin {
   from {

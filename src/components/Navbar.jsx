@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Icon from "../images/Icon.avif"
 
 function Navbar() {
   let [appear, setAppear] = useState(false);
@@ -11,36 +12,31 @@ function Navbar() {
   function clearAppear() {
     setAppear(false);
   }
-  
-  
+
   return (
     <div className="header">
-
-      <Link to="/" className="nav-logo text-white" onClick={clearAppear}>Logo</Link>
+      <Link to="/" className="nav-logo text-white" onClick={clearAppear}>
+        <img src={Icon} alt="Icon" />
+      </Link>
       <nav className={`navbar ${appear ? "max-md:block" : "max-md:hidden"}`}>
         <Link to="/" className="nav-link" onClick={clearAppear}>
           Home
         </Link>
+        <Link to="/about" className="nav-link" onClick={clearAppear}>
+          About
+        </Link>
+        <Link to="/portfolio" className="nav-link" onClick={clearAppear}>
+          Portfolio
+        </Link>
         <Link to="/gallery" className="nav-link" onClick={clearAppear}>
           Gallery
-        </Link>
-        <Link to="/trainers" className="nav-link" onClick={clearAppear}>
-          Trainers
-        </Link>
-        <Link to="/classes" className="nav-link" onClick={clearAppear}>
-          Classes
-        </Link>
-        <Link to="/prices" className="nav-link" onClick={clearAppear}>
-          Prices
         </Link>
         <Link to="/contact" className="nav-link" onClick={clearAppear}>
           Contact
         </Link>
       </nav>
 
-      <div className="nav-btn" onClick={clearAppear}>
-        <Link to="/form">Founder</Link>
-      </div>
+     
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"

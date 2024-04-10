@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer">
       <div className="date text-lg">
         &copy;{" "}
-        <span className="text-[#143612] font-bold">
+        <span className="text-[#46f33d] font-bold">
           <a href="https://www.facebook.com/gabolekwefarms" target="blank">
             Gabolekwe
           </a>

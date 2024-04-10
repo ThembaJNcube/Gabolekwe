@@ -29,14 +29,14 @@ html {
 }
 
 .footer {
-  @apply text-[#000] max-2xl:fixed max-2xl:bottom-0 bg-[#7a4d1a]  flex justify-between w-full h-8 py-0 opacity-75 px-[2.3rem] max-md:px-2;
+  @apply text-[#49e044] max-2xl:fixed max-2xl:bottom-0 bg-[#0e0b08]  flex justify-between w-full h-8 py-0 opacity-75 px-[2.3rem] max-md:px-2;
 }
 .footer-links {
-  @apply flex justify-between gap-3 pt-2 text-[#000] text-[5rem] max-md:gap-1;
+  @apply flex justify-between gap-3 pt-2 text-[#c53d3d] text-[5rem] max-md:gap-1;
 }
 
 .section-container {
-  @apply text-white w-full m-auto pt-16 px-32 bg-[#693505] max-lg:px-12 max-md:pb-[2.2rem] max-md:h-auto;
+  @apply text-white w-full m-auto pt-16 px-32 bg-[#000000] max-lg:px-12 max-md:pb-[2.2rem] max-md:h-auto;
 }
 
 .contactSect {
@@ -48,7 +48,7 @@ html {
 }
 
 .contact-box svg {
-  @apply text-[#0e0d0d] hover:animate-pulse font-extrabold;
+  @apply text-[#54e447] hover:animate-pulse font-extrabold;
 }
 
 .contact-box .socials {
@@ -97,7 +97,7 @@ html {
 }
 
 .abHome {
-  background-image: url("./images/about/gabo.jpg");
+  background-image: url("./images/about/gabo.webp");
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +108,39 @@ html {
   @apply text-center flex items-center justify-center max-md:hidden;
 }
 .abCont {
-  @apply bg-gray-500 p-5 border-[2px] border-[#11bb0c] hover:border-[5px];
+  @apply bg-opacity-70 bg-black p-5 border-[2px] border-[#11bb0c] hover:border-[5px];
+}
+.portfolio-container {
+  @apply text-white w-full;
+}
+
+.title {
+  @apply text-center text-4xl font-bold;
+}
+.portCont {
+  @apply text-white w-full m-auto pt-16 px-32 bg-[#000000] max-lg:px-12 max-md:pb-[2.2rem] max-md:h-auto;
+}
+
+.portfolio-container h2 {
+  @apply text-3xl text-center mt-2;
+}
+
+.portfolio {
+  @apply grid grid-cols-3 gap-4 max-md:grid-cols-1 max-xl:grid-cols-2;
+}
+.portfolio img {
+  @apply w-full h-full;
+}
+.portfolio-layer {
+  @apply relative border-[1px] mt-1 hover:border-[3px] hover:border-[#0f7e14] overflow-hidden;
+}
+
+.portMessage {
+  @apply  bg-black bg-opacity-60 absolute bottom-0 left-0 w-full h-full text-white flex items-center justify-center text-3xl text-center translate-y-[100%] ease-in duration-500 ;
+}
+
+.portfolio-layer:hover .portMessage{
+  @apply translate-y-0
 }
 
 /*@keyframes App-logo-spin {

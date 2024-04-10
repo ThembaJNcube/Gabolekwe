@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Icon from "../images/logo.jpg"
+import Icon from "../images/logo.jpg";
 
 function Navbar() {
   let [appear, setAppear] = useState(false);
@@ -28,15 +28,13 @@ function Navbar() {
         <Link to="/portfolio" className="nav-link" onClick={clearAppear}>
           Portfolio
         </Link>
-        <Link to="/gallery" className="nav-link" onClick={clearAppear}>
-          Gallery
-        </Link>
+
         <Link to="/contact" className="nav-link" onClick={clearAppear}>
           Contact
         </Link>
       </nav>
-<div className="max-md:hidden"></div>
-     
+      <div className="max-md:hidden"></div>
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"

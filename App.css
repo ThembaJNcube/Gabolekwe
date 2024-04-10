@@ -1,0 +1,188 @@
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.header {
+  @apply flex items-center justify-between w-full fixed px-4 top-0 z-[100] h-auto  bg-black 
+  max-md:py-0 max-md:px-5 max-md:flex max-md:justify-between max-md:h-auto;
+}
+
+.nav-logo {
+  @apply w-[7rem] /*max-md:absolute max-md:top-0 max-md:w-32 max-md:h-8*/;
+}
+
+.navbar {
+  @apply max-md:absolute max-md:top-[100%] max-md:left-0 max-md:w-[100%]
+  max-md:p-[1rem] max-md:bg-black;
+}
+
+.menu {
+  @apply text-white hidden max-md:block /*max-md:absolute max-md:top-6 max-md:right-6*/;
+}
+
+.nav-link {
+  @apply text-2xl font-semibold text-[#c42c2c] ml-[2.5rem] p-1
+  rounded-[0.3rem] bg-transparent hover:bg-[#0ee431] hover:bg-opacity-30 transition-all duration-300 
+  max-lg:text-base max-lg:mx-1 max-lg:px-1 max-md:block;
+}
+.nav-btn {
+  @apply text-2xl font-normal text-[#bababd] bg-[#750e0e] my-2 py-[0.3rem] px-[0.3rem]
+   rounded-[0.7rem] w-[8rem] h-[2.7rem] bg-opacity-80  animate-pulse hover:animate-none
+   max-lg:w-[7.3rem] max-lg:text-lg max-lg:text-center max-lg:h-[2.5rem]
+   max-sm:h-[40%];
+}
+
+.section-container {
+  @apply h-auto pb-[3rem] grid grid-cols-3 px-8 gap-3 pt-32
+   max-md:block  max-md:text-center max-xl:grid-cols-2 max-lg:h-[full];
+}
+
+.home-content {
+  @apply border-2 w-[30rem] mb-4 rounded-[.8rem] border-[#1f7904]
+   max-md:h-[22rem] max-md:w-full max-md:mx-auto max-xl:w-full
+   max-2xl:w-[23rem]
+   max-sm:w-full max-sm:h-[65%]
+   max-sm:mb-8;
+}
+.writing {
+  @apply text-white text-center pt-[15%] max-md:pt-0 max-md:h-52 border-0
+  max-sm:w-full max-sm:m-0 max-sm:h-[65%];
+}
+.home-content img {
+  @apply w-full rounded-[.8rem] max-md:h-full max-2xl:h-full;
+}
+
+.bottom {
+  @apply text-white max-2xl:fixed max-2xl:bottom-0 bg-black  flex justify-between w-full h-8 pt-2 pb-0 px-[2.3rem] max-md:px-2;
+}
+.social-links {
+  @apply flex justify-between gap-5 text-[#751a1a] text-[5rem] max-md:gap-1;
+}
+
+.next .btn {
+  @apply text-white p-[2px] ml-[70%] mt-[50%] border-[.1px] border-orange-700 rounded-md hover:animate-pulse max-md:m-0;
+}
+
+.form-container {
+  @apply text-white text-2xl w-full m-auto h-[100vh] pt-32 max-md:text-xl max-md:py-20;
+}
+
+form {
+  @apply w-[30rem] bg-[#0a073b] mx-auto px-14 h-auto rounded-[.6rem] text-center max-md:w-[22rem];
+}
+
+form label {
+  @apply block;
+}
+
+form input {
+  @apply text-[#300c0c] text-center mb-2 rounded-[0.3rem] hover:border-2 hover:border-[#be1414];
+}
+
+.gallery-container {
+  @apply w-full m-auto h-[100vh] p-32 grid grid-cols-3 gap-0
+  max-lg:px-14 max-lg:gap-3
+  max-md:gap-2 max-md:px-6 max-md:grid-cols-2
+  max-sm:grid-cols-1; 
+}
+
+.gallery-box {
+  @apply text-white max-lg:border-2 max-lg:border-[#830b0b] rounded-[.5rem];
+}
+
+.gallery-box img {
+  @apply h-full max-lg:rounded-[.5rem];
+}
+
+.gallery-text {
+  @apply text-white font-medium col-span-3 text-5xl text-center
+  max-md:col-span-2 max-md:text-lg max-2xl:pb-10
+  max-sm:col-span-1;
+}
+
+.price-container {
+  @apply text-white w-full m-auto h-[100vh] p-32 flex items-center justify-between 
+  max-lg:flex-wrap max-lg:px-24 max-md:px-12 max-md:py-0 max-md:h-auto
+  max-md:grid max-md:grid-cols-1 max-md:gap-4  max-md:pt-[6rem] max-md:pb-[2.2rem];
+}
+
+.price-box {
+  @apply text-center p-[1.2rem] border-[3px] rounded-[.8rem] hover:border-[#830b0b];
+}
+
+.contact-container {
+  @apply text-white w-full m-auto h-[100vh] p-32 grid grid-cols-3 gap-2 
+  max-lg:grid-cols-2 max-lg:px-12
+  max-md:grid-cols-1  max-md:pt-[6rem] max-md:pb-[2.2rem] max-md:h-auto max-md:gap-[2px];
+}
+
+.contact-box {
+  @apply p-[.8rem] border-[1px] text-center hover:border-[#852828] hover:border-[3px];
+}
+
+.contact-box svg {
+  @apply text-[#852828] hover:animate-pulse;
+}
+
+.contact-box .socials {
+  @apply flex justify-center gap-8 max-md:gap-4;
+}
+
+.Trainers-container {
+  @apply pt-[6.8rem];
+}
+
+.side-pane {
+  @apply text-white grid grid-cols-4 px-4 justify-center text-center gap-4 h-[2.5rem] w-full
+  max-lg:grid-cols-2 max-md:gap-1;
+}
+
+.coach {
+  @apply h-full hover:animate-pulse font-bold text-[1.5rem] px-2 rounded-sm max-md:text-[1rem];
+}
+
+.Trainers-container .dispay-box {
+  @apply col-span-10 w-[60%] mx-auto mb-[5px] max-md:w-[70%];
+}
+.dispay-box img {
+  @apply w-[100%];
+}
+.dispay-box .info {
+  @apply text-white text-xl border-[1px] border-[#bd0c0c] animate-pulse max-md:text-lg;
+}
+
+.classes-container {
+  /*background-image:url(https://i.ytimg.com/vi/A8i2sstXev8/maxresdefault.jpg);*/
+  @apply h-[100vh] pt-[7rem] pb-[2rem] mx-auto text-white grid grid-cols-3 gap-[2.5rem] items-center max-md:grid-cols-1 max-md:h-auto max-lg:grid-cols-2 max-md:gap-3;
+}
+.class-box {
+  @apply m-auto relative bg-white border-white hover:border-[#b40808]  border-[3px] w-[75%] overflow-hidden flex;
+}
+
+.class-image {
+  @apply w-[100%];
+}
+
+.class-info {
+  @apply absolute bottom-0 left-0 items-center text-center text-3xl h-[100%] w-[100%] flex flex-col pt-2 translate-y-[100%] ease-in duration-500
+  bg-gradient-to-r from-purple-500 to-[#920909] opacity-80
+  max-lg:text-xl;
+}
+
+.class-box:hover .class-info {
+  @apply translate-y-0;
+}

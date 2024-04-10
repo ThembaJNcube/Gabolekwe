@@ -1,5 +1,5 @@
 import React from "react";
-import pepper from "../images/about/peppers.jpg"
+import pepper from "../images/about/peppers.webp"
 
 export default function About() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Icon from "../images/Icon.avif"
+import Icon from "../images/logo.jpg"
 
 function Navbar() {
   let [appear, setAppear] = useState(false);
@@ -35,7 +35,7 @@ function Navbar() {
           Contact
         </Link>
       </nav>
-
+<div className="max-md:hidden"></div>
      
       <svg
         xmlns="http://www.w3.org/2000/svg"

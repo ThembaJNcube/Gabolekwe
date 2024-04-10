@@ -5,16 +5,16 @@ html {
 }
 
 .header {
-  @apply flex items-center justify-between w-full fixed px-4 top-0 z-[100] h-auto  bg-black 
+  @apply flex justify-between items-center w-full fixed px-2 top-0 z-[100] h-auto  bg-black 
   max-md:py-0 max-md:px-5 max-md:flex max-md:justify-between max-md:h-auto opacity-70;
 }
 
 .nav-logo {
-  @apply w-[7rem] /*max-md:absolute max-md:top-0 max-md:w-32 max-md:h-8*/;
+  @apply w-[4rem] /*max-md:absolute max-md:top-0 max-md:w-32 max-md:h-8*/;
 }
 
 .navbar {
-  @apply max-md:absolute max-md:top-[100%] max-md:left-0 max-md:w-[100%]
+  @apply items-start max-md:absolute max-md:top-[100%] max-md:left-0 max-md:w-[100%]
   max-md:p-[1rem] max-md:bg-black;
 }
 
@@ -23,15 +23,9 @@ html {
 }
 
 .nav-link {
-  @apply text-2xl font-semibold text-[#c42c2c] ml-[2.5rem] p-1
+  @apply text-2xl font-semibold text-[#c42c2c] ml-[1.3rem] p-1
   rounded-[0.3rem] bg-transparent hover:bg-[#0ee431] hover:bg-opacity-30 transition-all duration-300 
   max-lg:text-base max-lg:mx-1 max-lg:px-1 max-md:block;
-}
-.nav-btn {
-  @apply text-2xl text-center font-normal text-[#bababd] bg-[#750e0e] my-2 py-[0.3rem] px-[0.3rem]
-   rounded-[0.7rem] w-[8rem] h-[2.7rem] bg-opacity-80  animate-pulse hover:animate-none
-   max-lg:w-[7.3rem] max-lg:text-lg max-lg:text-center max-lg:h-[2.5rem]
-   max-sm:h-[40%];
 }
 
 .footer {
@@ -42,8 +36,7 @@ html {
 }
 
 .section-container {
-  @apply text-[#fcc141] w-full m-auto pt-16 px-32  max-lg:px-12
-  max-md:pt-[6rem] max-md:pb-[2.2rem] max-md:h-auto;
+  @apply text-white w-full m-auto pt-16 px-32 bg-[#693505] max-lg:px-12 max-md:pb-[2.2rem] max-md:h-auto;
 }
 
 .contactSect {
@@ -74,22 +67,49 @@ html {
   @apply m-auto;
 }
 
-.container{
-  @apply w-full h-[100vh] flex items-center justify-center text-white
+.container {
+  @apply w-full h-[100vh] flex items-center justify-center text-white;
 }
-.content{
-  @apply border-b-[.2rem] border-l-[.5rem] p-5 font-bold bg-black opacity-80
-}
-
-.content h1{
-  @apply text-[4rem] max-md:text-[2rem]
+.content {
+  @apply border-b-[.2rem] border-l-[.5rem] p-5 font-bold bg-black opacity-80;
 }
 
-.content p{
-  @apply text-[2rem] max-md:text-[1.2rem]
+.content h1 {
+  @apply text-[4rem] max-md:text-[2rem];
 }
 
+.content p {
+  @apply text-[2rem] max-md:text-[1.2rem];
+}
 
+.about-container {
+  @apply grid grid-cols-2 items-center w-full h-[auto] max-md:grid-cols-1 max-md:h-auto;
+}
+.about-box {
+  @apply px-3 bg-black h-full max-md:h-auto;
+}
+.about-box h1 {
+  @apply text-[2.3rem] font-bold max-md:text-[1.6rem] max-md:font-medium;
+}
+
+.about-box p {
+  @apply text-[1.2rem] font-bold max-md:text-[0.9rem];
+}
+
+.abHome {
+  background-image: url("./images/about/gabo.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abHome {
+  @apply text-center flex items-center justify-center max-md:hidden;
+}
+.abCont {
+  @apply bg-gray-500 p-5 border-[2px] border-[#11bb0c] hover:border-[5px];
+}
 
 /*@keyframes App-logo-spin {
   from {
